@@ -1,0 +1,48 @@
+{
+  "index_patterns": [
+    "%%TEMPLATE_PATTERN%%"
+  ],
+  "template": {
+    "settings": {
+    "number_of_shards": %%SHARDS%%,
+    "number_of_replicas": %%REPLICAS%%,
+      "index.refresh_interval": "30s"
+    },
+    "mappings": {
+      "_meta": {
+        "version": "%%VERSION%%",
+        "name": "%%PREFIX%%"
+      },
+      "dynamic": "strict",
+      "properties": {
+        "date": {
+          "type": "date"
+        },
+        "message": {
+          "type": "keyword"
+        },
+        "logger": {
+          "type": "keyword"
+        },
+        "file": {
+          "type": "keyword"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "level": {
+          "type": "keyword"
+        },
+        "exc_info": {
+          "type": "keyword"
+        },
+        "stack_info": {
+          "type": "keyword"
+        }
+      }
+    },
+    "aliases": {
+      "%%ALIAS%%": {}
+    }
+  }
+}

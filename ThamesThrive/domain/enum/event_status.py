@@ -1,0 +1,4 @@
+COLLECTED = 'collected'
+PROCESSED = 'processed'
+
+

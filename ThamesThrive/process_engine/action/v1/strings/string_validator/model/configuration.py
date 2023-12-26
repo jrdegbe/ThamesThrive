@@ -1,0 +1,10 @@
+from ThamesThrive.service.plugin.domain.config import PluginConfig
+
+
+class Configuration(PluginConfig):
+    validator: str
+    data: str
+
+
+
+

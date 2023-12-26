@@ -1,0 +1,98 @@
+[
+    {
+    "name": "Product Search Result",
+    "description": "Customer viewed a product list or product category.",
+    "id": "product-search-result",
+    "properties": {
+      "type": "product",
+      "query": "string",
+      "filters": [
+        {
+          "key": "string",
+          "value": "string"
+        }
+      ],
+      "sorting": [
+        {
+          "key": "string",
+          "order": "string"
+        }
+      ],
+      "products": [
+        {
+          "id": "string",
+          "sku": "string",
+          "name": "string",
+          "category": "string",
+          "url": {
+            "image": "url",
+            "page": "url"
+          },
+          "price": "float"
+        }
+      ]
+    },
+    "copy": {
+      "hit.query":   "properties.query"
+    },
+    "tags": ["activity:browsing", "activity:search", "entity:product"],
+    "state": "awareness"
+  },
+  {
+    "name": "Search",
+    "description": "Customer searched for products, services, etc.",
+    "id": "search",
+    "properties": {
+      "category": "string",
+      "query": "string"
+    },
+    "copy": {
+      "hit.category":  "properties.category",
+      "hit.query":     "properties.query"
+    },
+    "tags": ["activity:browsing", "activity:search"]
+  },
+  {
+    "name": "Page View",
+    "description": "Customer views a page.",
+    "id": "page-view",
+    "properties": {
+      "id": "string",
+      "category": "string"
+    },
+    "copy": {
+      "hit.id": "properties.id",
+      "hit.category": "properties.category"
+    },
+    "tags": ["activity:browsing"],
+    "state": "call:ThamesThrive.service.setup.events.journey.logic,page_view"
+  },
+  {
+    "name": "Page Print",
+    "description": "Customer prints a page.",
+    "id": "page-print",
+    "properties": {
+      "category": "string"
+    },
+    "traits": {
+      "hit.category": "properties.category"
+    },
+    "tags": ["activity:printing"],
+    "state": "awareness"
+  },
+  {
+    "name": "Screen View",
+    "description": "Customer views a screen at mobile device.",
+    "id": "screen-view",
+    "properties": {
+      "name": "string",
+      "category": "string"
+    },
+    "traits": {
+      "hit.name":      "properties.name",
+      "hit.category":  "properties.category"
+    },
+    "tags": ["activity:browsing"],
+    "state": "awareness"
+  }
+]

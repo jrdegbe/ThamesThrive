@@ -1,0 +1,100 @@
+import logging
+from typing import Optional, TypeVar, Type, Set
+from uuid import uuid4
+from pydantic import BaseModel, PrivateAttr
+
+from ThamesThrive.config import ThamesThrive
+from ThamesThrive.domain.storage_record import RecordMetadata, StorageRecord
+from ThamesThrive.domain.value_object.storage_info import StorageInfo
+from ThamesThrive.exceptions.log_handler import log_handler
+from ThamesThrive.protocol.operational import Operational
+from ThamesThrive.service.dot_notation_converter import dotter
+from ThamesThrive.service.storage.index import Resource
+
+logger = logging.getLogger(__name__)
+logger.setLevel(ThamesThrive.logging_level)
+logger.addHandler(log_handler)
+
+T = TypeVar("T")
+
+
+class Creatable(BaseModel):
+
+    @classmethod
+    def create(cls: Type[T], record: Optional[StorageRecord]) -> Optional[T]:
+        if not record:
+            return None
+
+        obj = cls(**dict(record))
+
+        if hasattr(obj, 'set_meta_data'):
+            obj.set_meta_data(record.get_meta_data())
+        return obj
+
+
+class NullableEntity(Creatable):
+    id: Optional[str] = None
+
+
+class Entity(Creatable):
+    id: str
+    _metadata: Optional[RecordMetadata] = PrivateAttr(None)
+
+    def set_meta_data(self, metadata: RecordMetadata = None) -> 'Entity':
+        self._metadata = metadata
+        return self
+
+    def get_meta_data(self) -> Optional[RecordMetadata]:
+        return self._metadata if isinstance(self._metadata, RecordMetadata) else None
+
+    def _fill_meta_data(self, index_type: str):
+        """
+        Used to fill metadata with default current index and id.
+        """
+        if not self.has_meta_data():
+            resource = Resource()
+            self.set_meta_data(RecordMetadata(id=self.id, index=resource[index_type].get_write_index()))
+
+    def dump_meta_data(self) -> Optional[dict]:
+        return self._metadata.model_dump(mode='json') if isinstance(self._metadata, RecordMetadata) else None
+
+    def has_meta_data(self) -> bool:
+        return self._metadata is not None
+
+    def to_storage_record(self, exclude=None, exclude_unset: bool = False) -> StorageRecord:
+        record = StorageRecord(**self.model_dump(exclude=exclude, exclude_unset=exclude_unset))
+
+        # Storage records must have ES _id
+
+        if 'id' in record:
+            record['_id'] = record['id']
+
+        if self._metadata:
+            record.set_meta_data(self._metadata)
+        else:
+            # Does not have metadata
+            storage_info = self.storage_info()  # type: Optional[StorageInfo]
+            if storage_info and storage_info.multi is True:
+                if isinstance(self, Operational):
+                    if self.operation.new is False:
+                        logger.error(f"Entity {type(self)} does not have index set. And it is not new.")
+                else:
+                    logger.info(f"Entity {type(self)} converts to index-less storage record.")
+        return record
+
+    @staticmethod
+    def new() -> 'Entity':
+        return Entity(id=str(uuid4()))
+
+    @staticmethod
+    def storage_info() -> Optional[StorageInfo]:
+        return None
+
+    def get_dotted_properties(self) -> Set[str]:
+        return dotter(self.model_dump())
+
+    def __hash__(self):
+        return hash(self.id)
+
+    def __eq__(self, other):
+        return self.id == other.id if isinstance(other, Entity) else False

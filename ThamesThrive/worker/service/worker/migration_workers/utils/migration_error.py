@@ -1,0 +1,3 @@
+class MigrationError(Exception):
+    pass
+

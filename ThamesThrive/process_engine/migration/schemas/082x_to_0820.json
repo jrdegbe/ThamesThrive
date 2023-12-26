@@ -1,0 +1,423 @@
+[
+  "Added indices: ; removed indices: ",
+  {
+    "id": "a842a75768fe52aa24a589321b3fb1ad9b26e4c1",
+    "copy_index": {
+      "from_index": "ThamesThrive-entity",
+      "to_index": "ThamesThrive-entity",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "b3a6edcfccd727f7392f87fd0c2476a2b85a3d4f",
+    "copy_index": {
+      "from_index": "ThamesThrive-consent-type",
+      "to_index": "ThamesThrive-consent-type",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "174d1de1e5a81e35bab05cd9bcca8354a3f5ca2e",
+    "copy_index": {
+      "from_index": "ThamesThrive-segment",
+      "to_index": "ThamesThrive-segment",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "7549aaa6c69601f2a199f52233da9fb0349b2786",
+    "copy_index": {
+      "from_index": "ThamesThrive-identification-point",
+      "to_index": "ThamesThrive-identification-point",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "39f3030c3d8ec09d13a510c7b1748a2e45a9fe6d",
+    "copy_index": {
+      "from_index": "ThamesThrive-events-tags",
+      "to_index": "ThamesThrive-events-tags",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "823004bd21807676d2bbed8ea54e1e271ff54040",
+    "copy_index": {
+      "from_index": "ThamesThrive-source",
+      "to_index": "ThamesThrive-source",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "35b07d876399d4e7462371da350fb4930dd4c182",
+    "copy_index": {
+      "from_index": "ThamesThrive-consent-data-compliance",
+      "to_index": "ThamesThrive-consent-data-compliance",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "23a50c2a87657ea6216cfd8f27a22d07447c5115",
+    "copy_index": {
+      "from_index": "ThamesThrive-user-log",
+      "to_index": "ThamesThrive-user-log",
+      "multi": true,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "845b5f68937e3ef90fa03aa803bacffa140540ac",
+    "copy_index": {
+      "from_index": "ThamesThrive-event-reshaping",
+      "to_index": "ThamesThrive-event-reshaping",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "d8cb5b95bef59e1da2b753eb9b707aeefa75c867",
+    "copy_index": {
+      "from_index": "ThamesThrive-heartbeats",
+      "to_index": "ThamesThrive-heartbeats",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "855b6ac1ba9369289be86f63403c9ac8b3adc90e",
+    "copy_index": {
+      "from_index": "ThamesThrive-pro",
+      "to_index": "ThamesThrive-pro",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "5bd3f891da70ecbb66d3611a927b9f639abb6193",
+    "copy_index": {
+      "from_index": "ThamesThrive-task",
+      "to_index": "ThamesThrive-task",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "8f3f63049796d77506d36e55018867d5cd97b544",
+    "copy_index": {
+      "from_index": "ThamesThrive-live-segment",
+      "to_index": "ThamesThrive-live-segment",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "6826bbda13e802ed938420585a47aeee503c6b94",
+    "copy_index": {
+      "from_index": "ThamesThrive-event-management",
+      "to_index": "ThamesThrive-event-management",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "880ac2abe6092aa94881b4d46fda2dae875059ed",
+    "copy_index": {
+      "from_index": "ThamesThrive-user",
+      "to_index": "ThamesThrive-user",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "644178dbc088c3ca1e705967e644355684cb0459",
+    "copy_index": {
+      "from_index": "ThamesThrive-log",
+      "to_index": "ThamesThrive-log",
+      "multi": true,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "48a98d455698082470d0887fa77dd8fa7779a4de",
+    "copy_index": {
+      "from_index": "ThamesThrive-destination",
+      "to_index": "ThamesThrive-destination",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "6cb382a86778e6b4fcc6819297bb95b4fae7ffb1",
+    "copy_index": {
+      "from_index": "ThamesThrive-event-redirect",
+      "to_index": "ThamesThrive-event-redirect",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "49218eccf882326500a2949c9a4d9f59247f6f18",
+    "copy_index": {
+      "from_index": "ThamesThrive-content",
+      "to_index": "ThamesThrive-content",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "1c2a2f84e8b8feee6bd32a482744ace25ada09ff",
+    "copy_index": {
+      "from_index": "ThamesThrive-entity-list",
+      "to_index": "ThamesThrive-entity-list",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "40ac8499751b4dc22a3fea426bd962c6611a8272",
+    "copy_index": {
+      "from_index": "ThamesThrive-report",
+      "to_index": "ThamesThrive-report",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "67ffc4208b8e52cac124962528ade4b55659531a",
+    "copy_index": {
+      "from_index": "ThamesThrive-session",
+      "to_index": "ThamesThrive-session",
+      "multi": true,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "6defe76099caedd215aac522913ee3da216c6015",
+    "copy_index": {
+      "from_index": "ThamesThrive-debug-info",
+      "to_index": "ThamesThrive-debug-info",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "cae81d4f031d68c46cc28e287892973af99f2c20",
+    "copy_index": {
+      "from_index": "ThamesThrive-event_to_profile",
+      "to_index": "ThamesThrive-event_to_profile",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "add745a36cf0a8ad6764d6d766821a27b9fb3c28",
+    "copy_index": {
+      "from_index": "ThamesThrive-rule",
+      "to_index": "ThamesThrive-rule",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "984df00daa0c5109cea1df3619d4841a224316cb",
+    "copy_index": {
+      "from_index": "ThamesThrive-resource",
+      "to_index": "ThamesThrive-resource",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "0fd59b15e03c17702a3d1704ccb8d1087a063ac3",
+    "copy_index": {
+      "from_index": "ThamesThrive-flow",
+      "to_index": "ThamesThrive-flow",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "3ee469711148d582eea28a49dbcd1e3d3cd9f28a",
+    "copy_index": {
+      "from_index": "ThamesThrive-import",
+      "to_index": "ThamesThrive-import",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "627af261e45e464c3f2044d15878cf3bcc0b2b4b",
+    "copy_index": {
+      "from_index": "ThamesThrive-event-validation",
+      "to_index": "ThamesThrive-event-validation",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "41b563eb6dc60dcb38c4fd578f1a9c98021a05d0",
+    "copy_index": {
+      "from_index": "ThamesThrive-item",
+      "to_index": "ThamesThrive-item",
+      "multi": true,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "a567b8eae5a59fa8c5cbf2414e934c2f02aac810",
+    "copy_index": {
+      "from_index": "ThamesThrive-console-log",
+      "to_index": "ThamesThrive-console-log",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "864d5521dc24b2064ded7efb8c7585d347912d13",
+    "copy_index": {
+      "from_index": "ThamesThrive-profile",
+      "to_index": "ThamesThrive-profile",
+      "multi": true,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "5425c363afa8f668b504b8e0e5c8fe96fd617089",
+    "copy_index": {
+      "from_index": "ThamesThrive-version",
+      "to_index": "ThamesThrive-version",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "ea4ee378dbe1c87b2a269eda3fd2035a38b293e3",
+    "copy_index": {
+      "from_index": "ThamesThrive-setting",
+      "to_index": "ThamesThrive-setting",
+      "multi": false,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  },
+  {
+    "id": "3eb061ed56a10a6c8cc98eead9da258cd6b775fa",
+    "copy_index": {
+      "from_index": "ThamesThrive-event",
+      "to_index": "ThamesThrive-event",
+      "multi": true,
+      "script": null
+    },
+    "worker": "reindex",
+    "conflicts": null,
+    "asynchronous": true
+  }
+]

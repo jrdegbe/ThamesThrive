@@ -1,0 +1,7 @@
+recursive-include ThamesThrive/domain *
+recursive-include ThamesThrive/event_server *
+recursive-include ThamesThrive/exceptions *
+recursive-include ThamesThrive/process_engine *
+recursive-include ThamesThrive/protocol *
+recursive-include ThamesThrive/service *
+recursive-include ThamesThrive/worker *

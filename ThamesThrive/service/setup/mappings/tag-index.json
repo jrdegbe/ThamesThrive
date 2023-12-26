@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "number_of_shards": %%CONF_SHARDS%%,
+    "number_of_replicas": %%REPLICAS%%
+  },
+  "mappings": {
+    "_meta": {
+      "version": "%%VERSION%%",
+      "name": "%%PREFIX%%"
+    },
+    "dynamic": "strict",
+    "properties": {
+      "type": {
+        "type": "keyword"
+      },
+      "tags": {
+        "type": "text"
+      }
+    }
+  },
+  "aliases": {
+    "%%ALIAS%%": {}
+  }
+}
