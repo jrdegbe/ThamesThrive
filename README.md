@@ -35,7 +35,7 @@ What ThamesThrive can do for you:
 The easiest way to run ThamesThrive is to run it as a :whole: **docker container**. 
 
 * Install docker and docker-compose on your local machine
-* Clone [ThamesThrive/ThamesThrive-api](https://github.com/ThamesThrive/ThamesThrive-api.git) by executing the following line in your terminal.
+* Clone [ThamesThrive/ThamesThrive-api](https://github.com/jrdegbe/ThamesThrive-api.git) by executing the following line in your terminal.
 
   ```bash
   git clone https://github.com/ThamesThrive/ThamesThrive-api.git
@@ -68,4 +68,4 @@ There are alternate methods of installation available as well. These are describ
 
 ## 👇 License
 
-ThamesThrive is available under [MIT with Common Clause](https://github.com/ThamesThrive/ThamesThrive/blob/master/LICENSE.md) license.
+ThamesThrive is available under [MIT with Common Clause](https://github.com/jrdegbe/ThamesThrive/blob/master/LICENSE.md) license.
