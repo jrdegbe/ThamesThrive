@@ -7,10 +7,10 @@ from time import sleep
 
 from com_ThamesThrive.service.tracking.queue.pulsar_queue import QueueWithFailOverPublisher
 from com_ThamesThrive.service.tracking.queue.pulsar_topics import EVENT_TOPIC, EVENT_FO
-from ThamesThrive.config import tracardi
+from ThamesThrive.config import ThamesThrive
 from ThamesThrive.context import Context
 from ThamesThrive.domain.entity import Entity
-from tracardi.domain.event import Event
+from ThamesThrive.domain.event import Event
 from ThamesThrive.domain.event_metadata import EventMetadata
 from ThamesThrive.domain.time import EventTime
 from ThamesThrive.exceptions.log_handler import log_handler
