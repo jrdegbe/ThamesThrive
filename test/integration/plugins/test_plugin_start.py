@@ -8,7 +8,7 @@ from ThamesThrive.service.plugin.service.plugin_runner import run_plugin
 from ThamesThrive.service.wf.service.builders import action
 from ThamesThrive.service.wf.utils.dag_processor import DagProcessor
 from ThamesThrive.service.wf.utils.flow_graph_converter import FlowGraphConverter
-from tracardi.domain.event import Event, EventSession
+from ThamesThrive.domain.event import Event, EventSession
 from ThamesThrive.domain.event_metadata import EventMetadata
 from ThamesThrive.domain.time import EventTime
 from ThamesThrive.domain.entity import Entity
